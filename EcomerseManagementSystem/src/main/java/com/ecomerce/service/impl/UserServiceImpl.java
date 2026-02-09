@@ -2,20 +2,23 @@ package com.ecomerce.service.impl;
 
 import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ecomerce.dto.request.UserRequest;
 import com.ecomerce.dto.response.UserResponse;
 import com.ecomerce.entity.UserEntity;
-import com.ecomerce.exception.UserDetailsNotCorrect;
 import com.ecomerce.repository.UserRepository;
 import com.ecomerce.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
-	@Autowired
-	UserRepository userRepository;
+	
+	private final UserRepository userRepository;  
+
+	public UserServiceImpl(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
 
 	@Override
 	public String userRegistered(UserRequest userRequest){

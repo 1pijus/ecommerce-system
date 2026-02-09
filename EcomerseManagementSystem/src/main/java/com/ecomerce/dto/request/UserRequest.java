@@ -14,7 +14,20 @@ public class UserRequest {
     @Email(message = "Email format is invalid")
     private String email;
 
-    // getters & setters
+    public UserRequest(
+			@NotBlank(message = "Name must not be blank") @Size(min = 2, max = 50, message = "Name must be between 2 and 50 characters") String name,
+			@NotBlank(message = "Email must not be blank") @Email(message = "Email format is invalid") String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+
+	public UserRequest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	// getters & setters
     public String getName() {
         return name;
     }

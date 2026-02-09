@@ -1,6 +1,5 @@
 package com.ecomerce.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,9 +18,14 @@ import jakarta.validation.Valid;
 @Validated
 @RequestMapping("/ecommerce")
 public class UserController {
-	@Autowired
-	UserService userService;
 	
+	private final UserService userService;
+	
+	public UserController(UserService userService) {
+		super();
+		this.userService = userService;
+	}
+
 	@PostMapping("/register")
 	public String userRegister(@Valid @RequestBody UserRequest userRequest) {
 		return userService.userRegistered(userRequest);

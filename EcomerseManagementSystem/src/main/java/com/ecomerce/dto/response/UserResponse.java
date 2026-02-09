@@ -5,8 +5,16 @@ public class UserResponse {
 	private String name;
 	private String email;
 	
-	
-	
+	public UserResponse(int id, String name, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+	}
+	public UserResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public int getId() {
 		return id;
 	}

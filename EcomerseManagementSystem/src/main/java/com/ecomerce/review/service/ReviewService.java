@@ -21,7 +21,7 @@ public class ReviewService {
 		boolean  alreadyReviewed= reviewRepository.existsByProductIdAndUserId(reviewRequest.getProductId(),reviewRequest.getUserId());
 		
 		if(alreadyReviewed) {
-			throw new ReviewAlreadyExistsException("User already reviewed this product!");
+			throw new ReviewAlreadyExistsException("User already reviewed this product !");
 		}
 		
 		reviewEntity.setProductId(reviewRequest.getProductId());

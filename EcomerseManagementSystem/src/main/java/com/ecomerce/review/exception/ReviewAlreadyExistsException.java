@@ -1,0 +1,7 @@
+package com.ecomerce.review.exception;
+
+public class ReviewAlreadyExistsException extends RuntimeException{
+	public ReviewAlreadyExistsException(String message) {
+		super(message);
+	}
+}

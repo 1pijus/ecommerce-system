@@ -1,4 +1,4 @@
-package com.ecomerce.dto.response;
+package com.ecomerce.user.dto.response;
 
 public class UserResponse {
 	private int id;

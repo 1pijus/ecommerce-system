@@ -1,14 +1,14 @@
-package com.ecomerce.service.impl;
+package com.ecomerce.user.service.impl;
 
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.ecomerce.dto.request.UserRequest;
-import com.ecomerce.dto.response.UserResponse;
-import com.ecomerce.entity.UserEntity;
-import com.ecomerce.repository.UserRepository;
-import com.ecomerce.service.UserService;
+import com.ecomerce.user.dto.request.UserRequest;
+import com.ecomerce.user.dto.response.UserResponse;
+import com.ecomerce.user.entity.UserEntity;
+import com.ecomerce.user.repository.UserRepository;
+import com.ecomerce.user.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

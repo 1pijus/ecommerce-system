@@ -1,4 +1,4 @@
-package com.ecomerce.exception;
+package com.ecomerce.user.exception;
 
 public class UserDetailsNotCorrect extends RuntimeException {
 	public UserDetailsNotCorrect(String message) {

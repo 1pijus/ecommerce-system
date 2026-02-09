@@ -1,4 +1,4 @@
-package com.ecomerce.controller;
+package com.ecomerce.user.controller;
 
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ecomerce.dto.request.UserRequest;
-import com.ecomerce.dto.response.UserResponse;
-import com.ecomerce.service.UserService;
+import com.ecomerce.user.dto.request.UserRequest;
+import com.ecomerce.user.dto.response.UserResponse;
+import com.ecomerce.user.service.UserService;
 
 import jakarta.validation.Valid;
 

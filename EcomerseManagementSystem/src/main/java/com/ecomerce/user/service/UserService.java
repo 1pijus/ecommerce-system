@@ -1,7 +1,7 @@
-package com.ecomerce.service;
+package com.ecomerce.user.service;
 
-import com.ecomerce.dto.request.UserRequest;
-import com.ecomerce.dto.response.UserResponse;
+import com.ecomerce.user.dto.request.UserRequest;
+import com.ecomerce.user.dto.response.UserResponse;
 
 public interface UserService {
 	public String userRegistered(UserRequest userRequest);

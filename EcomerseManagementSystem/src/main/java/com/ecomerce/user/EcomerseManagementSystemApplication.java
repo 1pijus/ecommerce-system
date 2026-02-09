@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
